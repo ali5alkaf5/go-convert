@@ -1,6 +1,6 @@
-# Node Encoder
+# Go Convert
 
-A simple NodeJS Encoder for encoding data to a certain format
+A simple NodeJS Converter for encoding data to a certain format
 
 ## Installation
 
