@@ -94,7 +94,7 @@ Converter.go(data, {
 });
 ```
 
-#### flatten
+#### Flatten
 
 Flatten an array to a certain ``depth`` (default: 1)
 
