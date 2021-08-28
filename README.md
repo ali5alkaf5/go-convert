@@ -39,9 +39,22 @@ encode.then(r => {
 ```javascript
 const Converter = require('go-convert');
 
+// Use Default Returns
+
 Converter.extend('if', (input, ...args)=>{
     // Extend a function as you want
     return input? args[0]: args[1];
+});
+
+// OR even use Promise returns
+
+Converter.extend('if', (input, ...args)=>{
+    return new Promise((resolve, reject)=>{
+        if(!args[0])
+            reject('The first argument must exist');
+        else
+            return input? args[0]: args[1];
+    })
 });
 
 // Use the convert options
