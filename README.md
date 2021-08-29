@@ -53,7 +53,7 @@ Converter.extend('if', (input, ...args)=>{
         if(!args[0])
             reject('The first argument must exist');
         else
-            return input? args[0]: args[1];
+            resolve(input? args[0]: args[1]);
     })
 });
 
